@@ -1,10 +1,10 @@
 # Vince's Personal Markdown Editor/Viewer
 
-----
+-----
 
-> Vite+Electron = 🔥
+> Vite + Electron = 🔥
 
-This project is a secure electron application. Written following the latest safety requirements, recommendations
+This project is a secure electron application using the latest safety requirements, recommendations
 and best practices.
 
 Under the hood is [Vite] — A next-generation blazing fast bundler, and [electron-builder] for packaging.
@@ -17,20 +17,20 @@ Follow these steps to get started:
 2. Input `npm run watch` to view a live version of the project while you are working on it.
 3. Input `npm run compile` to generate an executable which will be located in .\dist\win-unpacked [windows].
 
-That's all you need. 😉
+That's all you need. 😃
 
 ## Features
 
 ### Electron [![Electron version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/electron?label=%20)][electron]
 
-- This uses the latest electron version with all the latest security patches.
-- The architecture of the application is built according to the
+- Latest electron version and security patches.
+- Architecture of the app follows the
   security [guides](https://www.electronjs.org/docs/tutorial/security) and best practices.
-- The latest version of the [electron-builder] is used to package the application.
+- The latest version of the [electron-builder] is used to package the app.
 
 ### Vite [![Vite version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/vite?label=%20)][vite]
 
-- [Vite] is used to bundle all source codes. It's an extremely fast bundler, that has a vast array of amazing features.
+- [Vite] is used to bundle the source doe. It's a fast bundler, that has a ton of amazing features.
   You can learn more about how it is arranged in [this](https://www.youtube.com/watch?v=xXrhg26VCSc) video.
 - Vite [supports](https://vitejs.dev/guide/env-and-mode.html) reading `.env` files. You can also specify the types of
   your environment variables in [`types/env.d.ts`](types/env.d.ts).
@@ -43,7 +43,7 @@ Vite provides many useful features, such as: `TypeScript`, `TSX/JSX`, `CSS/JSON 
 
 ### TypeScript [![TypeScript version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/typescript?label=%20)][typescript] (optional)
 
-- The latest version of TypeScript is used for all the source code.
+- The latest version of TypeScript is used for the source code.
 - **Vite** supports TypeScript out of the box. However, it does not support type checking.
 - Code formatting rules follow the latest TypeScript recommendations and best practices thanks
   to [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
@@ -53,31 +53,11 @@ remove TypeScript.
 
 ### Vue [![Vue version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/vue?label=%20&)][vue] (optional)
 
-- By default, web pages are built using [Vue]. However, you can easily change that. Or not use additional frameworks at
-  all.
+- Web pages are built using [Vue]. However, may change that... or not use additional frameworks at
+  all. 🤔
 - Code formatting rules follow the latest Vue recommendations and best practices thanks to [eslint-plugin-vue].
 
 See [examples of web pages for different frameworks](https://github.com/vitejs/vite/tree/main/packages/create-vite).
-
-### Continuous Integration
-
-- The configured workflow will check the types for each push and PR.
-- The configured workflow will check the code style for each push and PR.
-- **Automatic tests**
-  used [Vitest ![Vitest version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/vitest?label=%20&color=yellow)][vitest]
-  -- A blazing fast test framework powered by Vite.
-  - Unit tests are placed within each package and are ran separately.
-  - End-to-end tests are placed in the root [`tests`](tests) directory and use [playwright].
-
-### Continuous delivery
-
-- Each time you push changes to the `main` branch, the [`release`](.github/workflows/release.yml) workflow starts, which
-  creates a release draft.
-  - The version is automatically set based on the current date in the format `yy.mm.dd-minutes`.
-  - Notes are automatically generated and added to the release draft.
-  - Code signing supported. See [`compile` job in the `release` workflow](.github/workflows/release.yml).
-- **Auto-update is supported**. After the release is published, all client applications will download the new version
-  and install updates silently.
 
 ## How it works
 
@@ -144,7 +124,7 @@ out of the box.
 
 To do this, use [electron-builder]:
 
-- Using the npm script `compile`: This script is configured to compile the application as quickly as possible. It is not
+- Using the npm script `npm run compile`: This script is configured to compile the application as quickly as possible. It is not
   ready for distribution, it is compiled only for the current platform and is used for debugging.
 - Using GitHub Actions: The application is compiled for any platform and ready-to-distribute files are automatically
   added as a draft to the GitHub releases page.
