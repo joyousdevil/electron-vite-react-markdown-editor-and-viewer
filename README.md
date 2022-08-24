@@ -30,7 +30,7 @@ That's all you need. 😃
 
 ### Vite [![Vite version](https://img.shields.io/github/package-json/dependency-version/cawa-93/vite-electron-builder/dev/vite?label=%20)][vite]
 
-- [Vite] is used to bundle the source doe. It's a fast bundler, that has a ton of amazing features.
+- [Vite] is used to bundle the source code. It's a fast bundler, that has a ton of amazing features.
   You can learn more about how it is arranged in [this](https://www.youtube.com/watch?v=xXrhg26VCSc) video.
 - Vite [supports](https://vitejs.dev/guide/env-and-mode.html) reading `.env` files. You can also specify the types of
   your environment variables in [`types/env.d.ts`](types/env.d.ts).
