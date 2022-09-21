@@ -1,4 +1,6 @@
-# Vince's Personal Markdown Editor/Viewer
+# Editor/Viewer
+
+Thank you, Takuya
 
 -----
 
